@@ -1,0 +1,48 @@
+{
+  "subscriptions": [
+    {
+      "id": "sub_001",
+      "userId": "usr_002",
+      "productId": "prod_001",
+      "status": "active",
+      "trialEndsAt": null,
+      "startsAt": "2024-02-01T14:30:00Z",
+      "nextBillingAt": "2024-03-01T14:30:00Z",
+      "createdAt": "2024-02-01T14:30:00Z",
+      "updatedAt": "2024-02-01T14:30:00Z"
+    },
+    {
+      "id": "sub_002",
+      "userId": "usr_003",
+      "productId": "prod_002",
+      "status": "active",
+      "trialEndsAt": "2024-03-01T09:15:00Z",
+      "startsAt": "2024-02-15T09:15:00Z",
+      "nextBillingAt": "2024-03-15T09:15:00Z",
+      "createdAt": "2024-02-15T09:15:00Z",
+      "updatedAt": "2024-02-15T09:15:00Z"
+    },
+    {
+      "id": "sub_003",
+      "userId": "usr_004",
+      "productId": "prod_003",
+      "status": "active",
+      "trialEndsAt": null,
+      "startsAt": "2024-03-01T16:45:00Z",
+      "nextBillingAt": "2024-04-01T16:45:00Z",
+      "createdAt": "2024-03-01T16:45:00Z",
+      "updatedAt": "2024-03-01T16:45:00Z"
+    },
+    {
+      "id": "sub_004",
+      "userId": "usr_005",
+      "productId": "prod_001",
+      "status": "canceled",
+      "trialEndsAt": null,
+      "startsAt": "2024-03-10T11:20:00Z",
+      "endsAt": "2024-04-10T11:20:00Z",
+      "createdAt": "2024-03-10T11:20:00Z",
+      "updatedAt": "2024-04-05T10:00:00Z"
+    }
+  ]
+}

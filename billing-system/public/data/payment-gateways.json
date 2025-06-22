@@ -1,0 +1,164 @@
+{
+  "paymentGateways": [
+    {
+      "id": "stripe",
+      "name": "Stripe",
+      "displayName": "Stripe",
+      "description": "Accept credit cards, bank transfers, and digital wallets",
+      "icon": "💳",
+      "enabled": true,
+      "supportedMethods": ["card", "bank_transfer", "ach"],
+      "supportedCurrencies": ["USD", "CAD", "EUR", "GBP"],
+      "fees": {
+        "card": "2.9% + $0.30",
+        "bank_transfer": "0.8%",
+        "ach": "0.8%"
+      },
+      "testMode": true,
+      "config": {
+        "publishableKey": "pk_test_...",
+        "secretKey": "sk_test_...",
+        "webhookSecret": "whsec_..."
+      }
+    },
+    {
+      "id": "square",
+      "name": "Square",
+      "displayName": "Square",
+      "description": "Integrated payment processing for in-person and online",
+      "icon": "⬜",
+      "enabled": true,
+      "supportedMethods": ["card", "digital_wallet"],
+      "supportedCurrencies": ["USD", "CAD", "GBP", "AUD"],
+      "fees": {
+        "card": "2.9% + $0.30",
+        "digital_wallet": "2.9% + $0.30"
+      },
+      "testMode": true,
+      "config": {
+        "applicationId": "sq0idp-...",
+        "accessToken": "EAAAE...",
+        "locationId": "L123..."
+      }
+    },
+    {
+      "id": "helcim",
+      "name": "Helcim",
+      "displayName": "Helcim",
+      "description": "Canadian payment processor with transparent pricing",
+      "icon": "🇨🇦",
+      "enabled": true,
+      "supportedMethods": ["card", "bank_transfer"],
+      "supportedCurrencies": ["CAD", "USD"],
+      "fees": {
+        "card": "2.65% + $0.08",
+        "bank_transfer": "1.95%"
+      },
+      "testMode": true,
+      "config": {
+        "merchantId": "12345",
+        "apiKey": "api_key_...",
+        "terminal": "term123"
+      }
+    },
+    {
+      "id": "btcpay",
+      "name": "BTCPay Server",
+      "displayName": "BTCPay",
+      "description": "Self-hosted cryptocurrency payment processor",
+      "icon": "₿",
+      "enabled": true,
+      "supportedMethods": ["bitcoin", "lightning"],
+      "supportedCurrencies": ["BTC", "USD", "CAD", "EUR"],
+      "fees": {
+        "bitcoin": "Network fees only",
+        "lightning": "Minimal routing fees"
+      },
+      "testMode": true,
+      "config": {
+        "serverUrl": "https://btcpay.example.com",
+        "apiKey": "btcpay_api_...",
+        "storeId": "store123"
+      }
+    },
+    {
+      "id": "lemonsqueezy",
+      "name": "Lemon Squeezy",
+      "displayName": "Lemon Squeezy",
+      "description": "All-in-one platform for selling digital products",
+      "icon": "🍋",
+      "enabled": true,
+      "supportedMethods": ["card", "paypal"],
+      "supportedCurrencies": ["USD", "EUR", "GBP"],
+      "fees": {
+        "card": "5% + payment processor fees",
+        "paypal": "5% + payment processor fees"
+      },
+      "testMode": true,
+      "config": {
+        "apiKey": "ls_api_...",
+        "storeId": "12345"
+      }
+    },
+    {
+      "id": "revenuecat",
+      "name": "RevenueCat",
+      "displayName": "RevenueCat",
+      "description": "In-app subscription and purchase management",
+      "icon": "📱",
+      "enabled": true,
+      "supportedMethods": ["app_store", "google_play"],
+      "supportedCurrencies": ["USD", "CAD", "EUR", "GBP"],
+      "fees": {
+        "app_store": "Apple/Google fees apply",
+        "google_play": "Apple/Google fees apply"
+      },
+      "testMode": true,
+      "config": {
+        "apiKey": "rc_api_...",
+        "publicKey": "rc_public_..."
+      }
+    },
+    {
+      "id": "woocommerce",
+      "name": "WooCommerce",
+      "displayName": "WooCommerce",
+      "description": "WordPress e-commerce integration",
+      "icon": "🛒",
+      "enabled": true,
+      "supportedMethods": ["card", "paypal", "bank_transfer"],
+      "supportedCurrencies": ["USD", "CAD", "EUR", "GBP"],
+      "fees": {
+        "card": "Varies by payment processor",
+        "paypal": "PayPal fees apply",
+        "bank_transfer": "No fees"
+      },
+      "testMode": true,
+      "config": {
+        "siteUrl": "https://shop.example.com",
+        "consumerKey": "ck_...",
+        "consumerSecret": "cs_..."
+      }
+    },
+    {
+      "id": "web3",
+      "name": "Web3 Payments",
+      "displayName": "Web3",
+      "description": "Cryptocurrency payments via blockchain",
+      "icon": "🌐",
+      "enabled": true,
+      "supportedMethods": ["ethereum", "polygon", "solana"],
+      "supportedCurrencies": ["ETH", "MATIC", "SOL", "USDC", "USDT"],
+      "fees": {
+        "ethereum": "Gas fees apply",
+        "polygon": "Low gas fees",
+        "solana": "Minimal transaction fees"
+      },
+      "testMode": true,
+      "config": {
+        "walletAddress": "0x...",
+        "chainIds": ["1", "137", "solana"]
+      }
+    }
+  ]
+}

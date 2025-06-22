@@ -1,0 +1,130 @@
+{
+  "metrics": {
+    "totalRevenue": {
+      "value": 1847.52,
+      "currency": "USD",
+      "changePercent": 12.5,
+      "changeType": "increase",
+      "period": "month"
+    },
+    "monthlyRecurringRevenue": {
+      "value": 1209.96,
+      "currency": "USD",
+      "changePercent": 8.3,
+      "changeType": "increase",
+      "period": "month"
+    },
+    "activeSubscriptions": {
+      "value": 3,
+      "changePercent": 0,
+      "changeType": "neutral",
+      "period": "month"
+    },
+    "totalCustomers": {
+      "value": 5,
+      "changePercent": 25,
+      "changeType": "increase",
+      "period": "month"
+    },
+    "churnRate": {
+      "value": 5.2,
+      "unit": "percent",
+      "changePercent": -15.2,
+      "changeType": "decrease",
+      "period": "month"
+    },
+    "averageRevenuePerUser": {
+      "value": 103.31,
+      "currency": "USD",
+      "changePercent": 3.2,
+      "changeType": "increase",
+      "period": "month"
+    }
+  },
+  "revenueChart": [
+    {
+      "month": "Oct 2023",
+      "revenue": 850.32,
+      "subscriptions": 12
+    },
+    {
+      "month": "Nov 2023",
+      "revenue": 1024.67,
+      "subscriptions": 15
+    },
+    {
+      "month": "Dec 2023",
+      "revenue": 1156.89,
+      "subscriptions": 17
+    },
+    {
+      "month": "Jan 2024",
+      "revenue": 1389.45,
+      "subscriptions": 19
+    },
+    {
+      "month": "Feb 2024",
+      "revenue": 1642.12,
+      "subscriptions": 22
+    },
+    {
+      "month": "Mar 2024",
+      "revenue": 1847.52,
+      "subscriptions": 25
+    }
+  ],
+  "paymentGatewayStats": [
+    {
+      "gateway": "Stripe",
+      "transactions": 45,
+      "volume": 1234.56,
+      "percentage": 45.2
+    },
+    {
+      "gateway": "Square",
+      "transactions": 28,
+      "volume": 789.32,
+      "percentage": 28.9
+    },
+    {
+      "gateway": "Helcim",
+      "transactions": 15,
+      "volume": 456.78,
+      "percentage": 16.7
+    },
+    {
+      "gateway": "BTCPay",
+      "transactions": 8,
+      "volume": 234.12,
+      "percentage": 8.6
+    },
+    {
+      "gateway": "Web3",
+      "transactions": 2,
+      "volume": 67.89,
+      "percentage": 2.5
+    }
+  ],
+  "subscriptionStatusBreakdown": [
+    {
+      "status": "Active",
+      "count": 18,
+      "percentage": 72
+    },
+    {
+      "status": "Trial",
+      "count": 4,
+      "percentage": 16
+    },
+    {
+      "status": "Canceled",
+      "count": 2,
+      "percentage": 8
+    },
+    {
+      "status": "Past Due",
+      "count": 1,
+      "percentage": 4
+    }
+  ]
+}

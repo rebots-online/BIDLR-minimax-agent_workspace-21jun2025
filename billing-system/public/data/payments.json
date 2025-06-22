@@ -1,0 +1,55 @@
+{
+  "payments": [
+    {
+      "id": "pay_001",
+      "invoiceId": "inv_001",
+      "paymentGateway": "stripe",
+      "transactionId": "pi_1234567890",
+      "amount": 33.89,
+      "currency": "USD",
+      "status": "successful",
+      "paymentMethod": "card",
+      "cardLast4": "4242",
+      "createdAt": "2024-02-05T16:20:00Z",
+      "updatedAt": "2024-02-05T16:20:00Z"
+    },
+    {
+      "id": "pay_002",
+      "invoiceId": "inv_002",
+      "paymentGateway": "square",
+      "transactionId": "sq_abcdef123456",
+      "amount": 90.39,
+      "currency": "USD",
+      "status": "successful",
+      "paymentMethod": "card",
+      "cardLast4": "1234",
+      "createdAt": "2024-02-20T11:30:00Z",
+      "updatedAt": "2024-02-20T11:30:00Z"
+    },
+    {
+      "id": "pay_003",
+      "invoiceId": "inv_003",
+      "paymentGateway": "helcim",
+      "transactionId": "hlc_xyz789",
+      "amount": 225.99,
+      "currency": "USD",
+      "status": "successful",
+      "paymentMethod": "bank_transfer",
+      "createdAt": "2024-03-07T14:15:00Z",
+      "updatedAt": "2024-03-07T14:15:00Z"
+    },
+    {
+      "id": "pay_004",
+      "invoiceId": "inv_004",
+      "paymentGateway": "stripe",
+      "transactionId": "pi_pending123",
+      "amount": 33.89,
+      "currency": "USD",
+      "status": "processing",
+      "paymentMethod": "card",
+      "cardLast4": "4242",
+      "createdAt": "2024-03-05T10:00:00Z",
+      "updatedAt": "2024-03-05T10:00:00Z"
+    }
+  ]
+}

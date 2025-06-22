@@ -1,0 +1,101 @@
+{
+  "taxRates": [
+    {
+      "id": "tax_001",
+      "region": "CA_ON",
+      "country": "Canada",
+      "state": "Ontario",
+      "city": "Toronto",
+      "rate": 0.13,
+      "name": "HST",
+      "description": "Harmonized Sales Tax (Ontario)",
+      "registrationNumber": "826393555RT0001",
+      "effective": true,
+      "createdAt": "2024-01-01T00:00:00Z",
+      "updatedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "tax_002",
+      "region": "US_NY",
+      "country": "United States",
+      "state": "New York",
+      "rate": 0.08,
+      "name": "Sales Tax",
+      "description": "New York State Sales Tax",
+      "effective": true,
+      "createdAt": "2024-01-01T00:00:00Z",
+      "updatedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "tax_003",
+      "region": "US_CA",
+      "country": "United States",
+      "state": "California",
+      "rate": 0.0725,
+      "name": "Sales Tax",
+      "description": "California State Sales Tax",
+      "effective": true,
+      "createdAt": "2024-01-01T00:00:00Z",
+      "updatedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "tax_004",
+      "region": "US_TX",
+      "country": "United States",
+      "state": "Texas",
+      "rate": 0.0625,
+      "name": "Sales Tax",
+      "description": "Texas State Sales Tax",
+      "effective": true,
+      "createdAt": "2024-01-01T00:00:00Z",
+      "updatedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "tax_005",
+      "region": "US_FL",
+      "country": "United States",
+      "state": "Florida",
+      "rate": 0.06,
+      "name": "Sales Tax",
+      "description": "Florida State Sales Tax",
+      "effective": true,
+      "createdAt": "2024-01-01T00:00:00Z",
+      "updatedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "tax_006",
+      "region": "CA_BC",
+      "country": "Canada",
+      "state": "British Columbia",
+      "rate": 0.12,
+      "name": "PST + GST",
+      "description": "Provincial Sales Tax + Goods and Services Tax",
+      "effective": true,
+      "createdAt": "2024-01-01T00:00:00Z",
+      "updatedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "tax_007",
+      "region": "CA_AB",
+      "country": "Canada",
+      "state": "Alberta",
+      "rate": 0.05,
+      "name": "GST",
+      "description": "Goods and Services Tax (Alberta)",
+      "effective": true,
+      "createdAt": "2024-01-01T00:00:00Z",
+      "updatedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "tax_008",
+      "region": "EU",
+      "country": "European Union",
+      "rate": 0.20,
+      "name": "VAT",
+      "description": "Value Added Tax (Standard Rate)",
+      "effective": true,
+      "createdAt": "2024-01-01T00:00:00Z",
+      "updatedAt": "2024-01-01T00:00:00Z"
+    }
+  ]
+}

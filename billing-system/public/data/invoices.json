@@ -1,0 +1,117 @@
+{
+  "invoices": [
+    {
+      "id": "inv_001",
+      "userId": "usr_002",
+      "subscriptionId": "sub_001",
+      "status": "paid",
+      "subtotal": 29.99,
+      "tax": 3.90,
+      "total": 33.89,
+      "currency": "USD",
+      "dueAt": "2024-02-08T14:30:00Z",
+      "paidAt": "2024-02-05T16:20:00Z",
+      "createdAt": "2024-02-01T14:30:00Z",
+      "updatedAt": "2024-02-05T16:20:00Z",
+      "items": [
+        {
+          "productId": "prod_001",
+          "description": "Basic Plan - February 2024",
+          "quantity": 1,
+          "unitPrice": 29.99,
+          "total": 29.99
+        }
+      ]
+    },
+    {
+      "id": "inv_002",
+      "userId": "usr_003",
+      "subscriptionId": "sub_002",
+      "status": "paid",
+      "subtotal": 79.99,
+      "tax": 10.40,
+      "total": 90.39,
+      "currency": "USD",
+      "dueAt": "2024-02-22T09:15:00Z",
+      "paidAt": "2024-02-20T11:30:00Z",
+      "createdAt": "2024-02-15T09:15:00Z",
+      "updatedAt": "2024-02-20T11:30:00Z",
+      "items": [
+        {
+          "productId": "prod_002",
+          "description": "Pro Plan - February 2024",
+          "quantity": 1,
+          "unitPrice": 79.99,
+          "total": 79.99
+        }
+      ]
+    },
+    {
+      "id": "inv_003",
+      "userId": "usr_004",
+      "subscriptionId": "sub_003",
+      "status": "paid",
+      "subtotal": 199.99,
+      "tax": 26.00,
+      "total": 225.99,
+      "currency": "USD",
+      "dueAt": "2024-03-08T16:45:00Z",
+      "paidAt": "2024-03-07T14:15:00Z",
+      "createdAt": "2024-03-01T16:45:00Z",
+      "updatedAt": "2024-03-07T14:15:00Z",
+      "items": [
+        {
+          "productId": "prod_003",
+          "description": "Enterprise Plan - March 2024",
+          "quantity": 1,
+          "unitPrice": 199.99,
+          "total": 199.99
+        }
+      ]
+    },
+    {
+      "id": "inv_004",
+      "userId": "usr_002",
+      "subscriptionId": "sub_001",
+      "status": "pending",
+      "subtotal": 29.99,
+      "tax": 3.90,
+      "total": 33.89,
+      "currency": "USD",
+      "dueAt": "2024-03-08T14:30:00Z",
+      "createdAt": "2024-03-01T14:30:00Z",
+      "updatedAt": "2024-03-01T14:30:00Z",
+      "items": [
+        {
+          "productId": "prod_001",
+          "description": "Basic Plan - March 2024",
+          "quantity": 1,
+          "unitPrice": 29.99,
+          "total": 29.99
+        }
+      ]
+    },
+    {
+      "id": "inv_005",
+      "userId": "usr_003",
+      "subscriptionId": "sub_002",
+      "status": "overdue",
+      "subtotal": 79.99,
+      "tax": 10.40,
+      "total": 90.39,
+      "currency": "USD",
+      "dueAt": "2024-03-22T09:15:00Z",
+      "createdAt": "2024-03-15T09:15:00Z",
+      "updatedAt": "2024-03-15T09:15:00Z",
+      "items": [
+        {
+          "productId": "prod_002",
+          "description": "Pro Plan - March 2024",
+          "quantity": 1,
+          "unitPrice": 79.99,
+          "total": 79.99
+        }
+      ]
+    }
+  ]
+}

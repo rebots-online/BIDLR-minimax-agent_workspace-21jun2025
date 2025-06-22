@@ -1,0 +1,70 @@
+{
+  "products": [
+    {
+      "id": "prod_001",
+      "tenantId": "tnt_001",
+      "name": "Basic Plan",
+      "description": "Essential features for small teams",
+      "price": 29.99,
+      "currency": "USD",
+      "billingPeriod": "monthly",
+      "features": [
+        "Up to 5 users",
+        "10GB storage",
+        "Basic support",
+        "Standard analytics"
+      ],
+      "createdAt": "2024-01-01T00:00:00Z",
+      "updatedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "prod_002",
+      "tenantId": "tnt_001",
+      "name": "Pro Plan",
+      "description": "Advanced features for growing businesses",
+      "price": 79.99,
+      "currency": "USD",
+      "billingPeriod": "monthly",
+      "features": [
+        "Up to 25 users",
+        "100GB storage",
+        "Priority support",
+        "Advanced analytics",
+        "API access"
+      ],
+      "createdAt": "2024-01-01T00:00:00Z",
+      "updatedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "prod_003",
+      "tenantId": "tnt_001",
+      "name": "Enterprise Plan",
+      "description": "Complete solution for large organizations",
+      "price": 199.99,
+      "currency": "USD",
+      "billingPeriod": "monthly",
+      "features": [
+        "Unlimited users",
+        "1TB storage",
+        "24/7 support",
+        "Custom analytics",
+        "Full API access",
+        "SSO integration"
+      ],
+      "createdAt": "2024-01-01T00:00:00Z",
+      "updatedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "prod_004",
+      "tenantId": "tnt_001",
+      "name": "Add-on: Extra Storage",
+      "description": "Additional 50GB storage",
+      "price": 9.99,
+      "currency": "USD",
+      "billingPeriod": "monthly",
+      "type": "addon",
+      "createdAt": "2024-01-01T00:00:00Z",
+      "updatedAt": "2024-01-01T00:00:00Z"
+    }
+  ]
+}
