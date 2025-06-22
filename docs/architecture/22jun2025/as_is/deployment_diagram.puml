@@ -1,0 +1,48 @@
+@startuml
+!theme materia
+
+node "User's Browser" as Browser {
+  component "React SPA (billing-system)" as FrontendApp
+}
+
+cloud "Static Hosting (Conceptual)" as Hosting {
+  FrontendApp ..> [index.html]
+  FrontendApp ..> [JS/CSS Bundles]
+  [JS/CSS Bundles] ..> [Public Assets (JSON data, images)]
+}
+
+package "Backend Services (Conceptual - Not Implemented)" {
+  node "API Gateway" as APIGateway
+  node "Billing Service" as BillingService
+  node "User Service" as UserService
+  node "Payment Gateway Service" as PaymentService
+  node "Tax Service" as TaxService
+  database "Primary Database" as DB
+}
+
+Browser ..> Hosting : HTTP GET (HTML, JS, CSS, Assets)
+Browser ..> APIGateway : HTTPS API Calls (Conceptual)
+
+APIGateway --> BillingService
+APIGateway --> UserService
+APIGateway --> PaymentService
+APIGateway --> TaxService
+
+BillingService ..> DB
+UserService ..> DB
+PaymentService ..> DB
+TaxService ..> DB
+
+note right of FrontendApp
+  Currently, the React app runs locally
+  via Vite dev server. JSON files in
+  `public/data` are served as static assets.
+  No actual backend calls are made.
+end note
+
+note bottom of "Backend Services (Conceptual - Not Implemented)"
+  These services are defined in design
+  documents but do not exist in the
+  current codebase.
+end note
+@enduml

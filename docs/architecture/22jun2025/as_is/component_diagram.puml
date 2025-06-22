@@ -1,0 +1,88 @@
+@startuml
+!theme materia
+
+package "billing-system" {
+  package "Frontend (React)" {
+    [App.tsx] <<Router>>
+    [LandingPage.tsx] <<Component>>
+    [AdminPortal.tsx] <<Component Stub>>
+    [UserPortal.tsx] <<Component Stub>>
+    [AuthProvider.tsx] <<Context>>
+    folder "ui components" {
+      [Button.tsx] <<UI Element>>
+      [Card.tsx] <<UI Element>>
+      [Input.tsx] <<UI Element>>
+      [Label.tsx] <<UI Element>>
+      [Badge.tsx] <<UI Element>>
+      [Toaster.tsx] <<UI Element>>
+      [ThemeProvider.tsx] <<Context>>
+    }
+    folder "hooks" {
+      [useAuth.ts] <<Hook>>
+      [use-mobile.tsx] <<Hook>>
+      [use-toast.ts] <<Hook>>
+    }
+     folder "lib" {
+      [utils.ts] <<Utility>>
+    }
+  }
+
+  package "Public Assets" {
+    folder "data" {
+      [users.json] <<Mock Data>>
+      [invoices.json] <<Mock Data>>
+      [products.json] <<Mock Data>>
+      [subscriptions.json] <<Mock Data>>
+      [payments.json] <<Mock Data>>
+      [dashboard-metrics.json] <<Mock Data>>
+      [payment-gateways.json] <<Mock Data>>
+      [tax-rates.json] <<Mock Data>>
+    }
+    folder "images" {
+      [admin-portal.webp]
+      [billing-dashboard.webp]
+    }
+  }
+}
+
+package "Design Documents (Conceptual)" {
+  [System Architecture Design]
+  [Database Schema Design]
+  [API Design (Partial)]
+  [Payment Gateway Integration Design]
+  [Tax Compliance Design]
+}
+
+[App.tsx] --> [LandingPage.tsx]
+[App.tsx] --> [AdminPortal.tsx]
+[App.tsx] --> [UserPortal.tsx]
+[App.tsx] --> [AuthProvider.tsx]
+[LandingPage.tsx] ..> [useAuth.ts]
+[LandingPage.tsx] ..> [Button.tsx]
+[LandingPage.tsx] ..> [Card.tsx]
+[LandingPage.tsx] ..> [Input.tsx]
+
+note right of [AdminPortal.tsx]
+  Currently a placeholder,
+  actual functionality not implemented.
+end note
+
+note right of [UserPortal.tsx]
+  Currently a placeholder,
+  actual functionality not implemented.
+end note
+
+note right of [AuthProvider.tsx]
+  Likely uses mock authentication logic
+  as no backend user service is integrated.
+end note
+
+note bottom of [users.json]
+  Mock data files suggest intent for
+  dynamic content, but no live backend
+  is connected yet.
+end note
+
+[Frontend (React)] ..> [Design Documents (Conceptual)] : Based on (conceptually)
+
+@enduml

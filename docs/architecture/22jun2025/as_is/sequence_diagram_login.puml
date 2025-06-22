@@ -1,0 +1,40 @@
+@startuml
+!theme materia
+autonumber
+
+actor User
+participant "LandingPage.tsx" as LandingPage
+participant "AuthProvider.tsx" as AuthProvider
+participant "Browser Storage" as Storage
+participant "AdminPortal / UserPortal" as Portal
+
+User -> LandingPage : Enters email and password
+User -> LandingPage : Clicks "Sign In" (Admin or User)
+activate LandingPage
+
+LandingPage -> AuthProvider : login(email, password)
+activate AuthProvider
+
+note right of AuthProvider
+  Current implementation likely uses
+  hardcoded credentials or mock logic
+  as there's no backend User Service.
+end note
+
+AuthProvider -> AuthProvider : Validates credentials (mock)
+alt Credentials Valid
+  AuthProvider -> Storage : Stores user session (mock)
+  AuthProvider --> LandingPage : Returns success (true)
+  LandingPage -> Portal : navigate(to /admin or /user)
+  activate Portal
+  Portal --> User : Displays respective portal
+  deactivate Portal
+else Credentials Invalid
+  AuthProvider --> LandingPage : Returns failure (false)
+  LandingPage -> User : Shows "Invalid credentials" toast
+end
+
+deactivate AuthProvider
+deactivate LandingPage
+
+@enduml
